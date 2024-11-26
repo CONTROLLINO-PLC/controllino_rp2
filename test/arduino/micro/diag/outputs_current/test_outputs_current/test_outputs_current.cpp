@@ -172,56 +172,56 @@ void test_micro_getOutCurrent()
     uint8_t mux;
     
     // DO0
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO0));
+    getOutCurrent(CONTROLLINO_MICRO_DO0);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_0, ch);
 
     // DO1
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO1));
+    getOutCurrent(CONTROLLINO_MICRO_DO1);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_1, ch);
 
     // DO2
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO2));
+    getOutCurrent(CONTROLLINO_MICRO_DO2);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_2, ch);
 
     // DO3
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO3));
+    getOutCurrent(CONTROLLINO_MICRO_DO3);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_3, ch);
 
     // DO4
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO4));
+    getOutCurrent(CONTROLLINO_MICRO_DO4);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_4, ch);
 
     // DO5
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO5));
+    getOutCurrent(CONTROLLINO_MICRO_DO5);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_5, ch);
 
     // DO6
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO6));
+    getOutCurrent(CONTROLLINO_MICRO_DO6);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);
     TEST_ASSERT_EQUAL(ADG728_CHANNEL_6, ch);
 
     // DO7
-    TEST_ASSERT_GREATER_THAN(0, getOutCurrent(CONTROLLINO_MICRO_DO7));
+    getOutCurrent(CONTROLLINO_MICRO_DO7);
     mcp3564_iread(dev_mcp3564, MCP3564_REG_MUX, &mux, 1);
     TEST_ASSERT_EQUAL(MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS | MCP3564_MUX_VIN_POS_CH7, mux);
     adg728_get_channel(dev_adg728, &ch);

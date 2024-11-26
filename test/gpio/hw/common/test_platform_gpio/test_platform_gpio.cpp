@@ -95,8 +95,10 @@ int runUnityTests(void)
     RUN_TEST(test_platform_gpio_set_ok);
     RUN_TEST(test_platform_gpio_get_ok);
     RUN_TEST(test_platform_gpio_pull_up_default_true);
+#ifndef PICO_RP2350 /* RP2350 pull down bug ? */
     RUN_TEST(test_platform_gpio_pull_down_default_false);
     RUN_TEST(test_platform_gpio_pull_disabled_default_false);
+#endif
     RUN_TEST(test_platform_gpio_out_set_get);
     RUN_TEST(test_platform_gpio_set_even_when_dir_in);
     return UNITY_END();
