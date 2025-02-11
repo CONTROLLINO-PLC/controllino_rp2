@@ -179,7 +179,23 @@ static const uint8_t A3 =           (29u);
 #ifndef MCP2515_DEFAULT_CLOCK_FREQUENCY
 #define MCP2515_DEFAULT_CLOCK_FREQUENCY (long)20E6
 #endif
- 
+
+
+/* For CAN_BUS_Shield library */
+#ifndef MCP2518FD_DEFAULT_SPI
+#define MCP2518FD_DEFAULT_SPI         SPI1
+#endif
+#ifndef MCP2518FD_DEFAULT_CS_PIN
+#define MCP2518FD_DEFAULT_CS_PIN      (9u)
+#endif
+#ifndef MCP2518FD_DEFAULT_INT_PIN
+#define MCP2518FD_DEFAULT_INT_PIN     (12u)
+#endif
+#ifndef MCP2518FD_DEFAULT_CLOCK_FREQUENCY
+#define MCP2518FD_DEFAULT_CLOCK_FREQUENCY (long)20E6
+#endif
+
+
 /* Analog inputs connected to MCP3564 24 bits ADC */
 static const uint8_t CONTROLLINO_MICRO_AI0 = (50u);
 static const uint8_t CONTROLLINO_MICRO_AI1 = (51u);
