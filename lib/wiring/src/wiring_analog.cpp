@@ -54,7 +54,7 @@ int analogRead(ControllinoPin* pin)
             break;
         }
         // 300 us delay for 128 over sample rate
-        mcp3564_read_adc_mux(dev_mcp3564, (uint32_t*)&adcValue, chn, MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS, 300);
+        mcp3564_read_adc_mux(dev_mcp3564, (uint32_t*)&adcValue, chn, MCP3564_MUX_VIN_NEG_VREF_EXT_MINUS, 350);
         break;
     default:
         // Other pin types are digital or analog output only
